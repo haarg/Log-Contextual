@@ -5,7 +5,8 @@ package Log::Contextual::Easy::Package;
 use strict;
 use warnings;
 
-use base 'Log::Contextual';
+use Log::Contextual ();
+BEGIN { our @ISA = qw(Log::Contextual); }
 
 sub arg_package_logger {
    if ($_[1]) {

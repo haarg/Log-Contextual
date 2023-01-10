@@ -539,7 +539,7 @@ own C<Log::Contextual> subclass as follows:
 
  package MyApp::Log::Contextual;
 
- use base 'Log::Contextual';
+ use parent 'Log::Contextual';
 
  use Log::Log4perl ':easy';
  Log::Log4perl->easy_init($DEBUG)
