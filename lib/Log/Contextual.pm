@@ -124,13 +124,15 @@ sub import {
       arguments => \%options,
    );
    my $router = $class->router;
-   $router->before_import(%router_args);
+   # wrapped in an extra sub so that caller levels match what they were when
+   # using Exporter::Declare
+   sub { $router->before_import(%router_args) }->();
 
    for my $import (@imports) {
       $class->_maybe_export($target, $import, $router);
    }
 
-   $router->after_import(%router_args);
+   sub { $router->after_import(%router_args) }->();
 }
 
 sub _maybe_export {
