@@ -38,8 +38,6 @@ sub default_import {
    my ($class) = shift;
 
    die 'Log::Contextual does not have a default import list';
-
-   ()
 }
 
 my @all_levels = qw(debug trace warn info error fatal);
