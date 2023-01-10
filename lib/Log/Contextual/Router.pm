@@ -4,8 +4,9 @@ use warnings;
 
 # ABSTRACT: Route messages to loggers
 
-use Moo;
 use Scalar::Util 'blessed';
+
+use Moo;
 
 with 'Log::Contextual::Role::Router',
   'Log::Contextual::Role::Router::SetLogger',
