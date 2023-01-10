@@ -1,4 +1,6 @@
 package Log::Contextual::Role::Router::WithLogger;
+use strict;
+use warnings;
 
 # ABSTRACT: Abstract interface between loggers and logging code blocks
 

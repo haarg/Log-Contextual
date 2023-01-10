@@ -1,4 +1,6 @@
 package Log::Contextual::Router;
+use strict;
+use warnings;
 
 # ABSTRACT: Route messages to loggers
 
