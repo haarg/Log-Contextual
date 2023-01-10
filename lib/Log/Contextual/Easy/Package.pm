@@ -51,9 +51,9 @@ with C<env_prefix> based on the module's name that uses
 Log::Contextual::Easy. The logging levels are set to C<trace> C<debug>,
 C<info>, C<warn>, C<error>, and C<fatal> (in this order) and all
 logging functions (L<log_...|Log::Contextual/"log_$level">,
-L<logS_...|Log::Contextual/"logS_$level">,
-L<Dlog_...|Log::Contextual/"Dlog_$level">, and
-L<Dlog...|Log::Contextual/"DlogS_$level">) are exported.
+L<< C<logS_...>|Log::Contextual/"logS_$level" >>,
+L<< C<Dlog_...>|Log::Contextual/"Dlog_$level" >>, and
+L<< C<Dlog...>|Log::Contextual/"DlogS_$level" >>) are exported.
 
 For what C<::Package> implies, see L<Log::Contextual/-package_logger>.
 
