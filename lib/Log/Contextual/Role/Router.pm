@@ -169,8 +169,8 @@ This is the name of the log level associated with the log event.
 
 =item message_sub
 
-This is the message generating code block associated with the log event passed as a subref. If
-the logger accepts the log request the router should execute the subref to create
+This is the message generating code block associated with the log event passed as a code reference. If
+the logger accepts the log request the router should execute the code reference to create
 the log message and then pass the message as a string to the logger.
 
 =item message_args

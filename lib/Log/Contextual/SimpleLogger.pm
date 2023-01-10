@@ -103,7 +103,7 @@ or
 Creates a new SimpleLogger object with the passed levels enabled and optionally
 a C<CodeRef> may be passed to modify how the logs are output/stored.
 
-C<levels_upto> enables all the levels upto and including the level passed.
+C<levels_upto> enables all the levels up to and including the level passed.
 
 Levels may contain:
 
