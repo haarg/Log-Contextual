@@ -1,4 +1,6 @@
-Revision history for Log-Contextual
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
 
 0.009000  2024-05-15
   - drop dependency on Exporter::Declare

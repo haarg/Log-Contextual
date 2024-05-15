@@ -2,7 +2,7 @@ package Log::Contextual::Easy::Package;
 use strict;
 use warnings;
 
-our $VERSION = '0.009000';
+our $VERSION = '0.009001';
 
 use Log::Contextual ();
 BEGIN { our @ISA = qw(Log::Contextual); }

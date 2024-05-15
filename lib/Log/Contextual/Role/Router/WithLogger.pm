@@ -2,7 +2,7 @@ package Log::Contextual::Role::Router::WithLogger;
 use strict;
 use warnings;
 
-our $VERSION = '0.009000';
+our $VERSION = '0.009001';
 
 use Moo::Role;
 
