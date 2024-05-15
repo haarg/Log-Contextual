@@ -2,7 +2,7 @@ package Log::Contextual::WarnLogger;
 use strict;
 use warnings;
 
-our $VERSION = '0.008002';
+our $VERSION = '0.009000';
 
 use Carp 'croak';
 
