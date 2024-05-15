@@ -8,14 +8,15 @@ use Log::Contextual ();
 BEGIN { our @ISA = qw(Log::Contextual); }
 
 sub arg_package_logger {
-   if ($_[1]) {
-      return $_[1];
-   } else {
-      require Log::Contextual::WarnLogger;
-      my $package = uc $_[2];
-      $package =~ s/::/_/g;
-      return Log::Contextual::WarnLogger->new({env_prefix => $package});
-   }
+  if ($_[1]) {
+    return $_[1];
+  }
+  else {
+    require Log::Contextual::WarnLogger;
+    my $package = uc $_[2];
+    $package =~ s/::/_/g;
+    return Log::Contextual::WarnLogger->new({env_prefix => $package});
+  }
 }
 
 sub default_import { qw(:dlog :log ) }
