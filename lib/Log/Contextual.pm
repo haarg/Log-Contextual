@@ -1,9 +1,8 @@
 package Log::Contextual;
-
-# ABSTRACT: Simple logging interface with a contextual log
-
 use strict;
 use warnings;
+
+our $VERSION = '0.008002';
 
 use Data::Dumper::Concise;
 
@@ -348,6 +347,20 @@ for (qw(set with)) {
 1;
 
 __END__
+
+=pod
+
+=encoding UTF-8
+
+=for :stopwords Scalable passthrough
+
+=head1 NAME
+
+Log::Contextual - Simple logging interface with a contextual log
+
+=head1 VERSION
+
+version 0.008002
 
 =head1 SYNOPSIS
 
@@ -941,19 +954,8 @@ C<Log::Dispatch> doesn't support implementing C<log_fatal> L<at all|/-levels>
 
 C<Log::Dispatchouli> implements C<log_fatal> using C<die> ( via Carp )
 
-=head1 CONTRIBUTORS
-
-=encoding utf8
-
-kentnl - Kent Fredric <kentfredric@gmail.com>
-
-triddle - Tyler Riddle <t.riddle@shadowcat.co.uk>
-
-voj - Jakob Voß <voss@gbv.de>
-
 =head1 DESIGNER
 
 mst - Matt S. Trout <mst@shadowcat.co.uk>
 
 =cut
-

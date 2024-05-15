@@ -2,7 +2,7 @@ package Log::Contextual::Router;
 use strict;
 use warnings;
 
-# ABSTRACT: Route messages to loggers
+our $VERSION = '0.008002';
 
 use Scalar::Util 'blessed';
 
@@ -152,3 +152,14 @@ sub handle_log_request {
 
 1;
 
+__END__
+
+=head1 NAME
+
+Log::Contextual::Router - Route messages to loggers
+
+=head1 VERSION
+
+version 0.008002
+
+=cut

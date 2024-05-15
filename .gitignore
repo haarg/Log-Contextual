@@ -1,2 +1,4 @@
-.build
-Log-Contextual-*
+/.build/
+/Log-Contextual-*/
+/Log-Contextual-*.tar
+/Log-Contextual-*.tar.gz

@@ -1,9 +1,8 @@
 package Log::Contextual::TeeLogger;
-
-# ABSTRACT: Output to more than one logger
-
 use strict;
 use warnings;
+
+our $VERSION = '0.008002';
 
 {
    for my $name (qw( trace debug info warn error fatal )) {
@@ -43,6 +42,14 @@ sub new {
 1;
 
 __END__
+
+=head1 NAME
+
+Log::Contextual::TeeLogger - Output to more than one logger
+
+=head1 VERSION
+
+version 0.008002
 
 =head1 SYNOPSIS
 

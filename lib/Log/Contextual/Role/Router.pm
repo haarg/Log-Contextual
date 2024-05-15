@@ -2,7 +2,7 @@ package Log::Contextual::Role::Router;
 use strict;
 use warnings;
 
-# ABSTRACT: Abstract interface between loggers and logging code blocks
+our $VERSION = '0.008002';
 
 use Moo::Role;
 
@@ -13,6 +13,14 @@ requires 'handle_log_request';
 1;
 
 __END__
+
+=head1 NAME
+
+Log::Contextual::Role::Router - Abstract interface between loggers and logging code blocks
+
+=head1 VERSION
+
+version 0.008002
 
 =head1 SYNOPSIS
 

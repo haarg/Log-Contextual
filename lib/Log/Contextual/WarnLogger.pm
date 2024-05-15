@@ -1,9 +1,8 @@
 package Log::Contextual::WarnLogger;
-
-# ABSTRACT: logger for libraries using Log::Contextual
-
 use strict;
 use warnings;
+
+our $VERSION = '0.008002';
 
 use Carp 'croak';
 
@@ -119,6 +118,14 @@ sub _log {
 
 __END__
 
+=head1 NAME
+
+Log::Contextual::WarnLogger - logger for libraries using Log::Contextual
+
+=head1 VERSION
+
+version 0.008002
+
 =head1 SYNOPSIS
 
  package My::Package;
@@ -136,8 +143,6 @@ __END__
    log_debug { 'entered foo' };
    ...
  }
-
-
 
 =head1 DESCRIPTION
 

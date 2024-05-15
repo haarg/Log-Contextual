@@ -1,9 +1,8 @@
 package Log::Contextual::SimpleLogger;
-
-# ABSTRACT: Super simple logger made for playing with Log::Contextual
-
 use strict;
 use warnings;
+
+our $VERSION = '0.008002';
 
 {
    for my $name (qw( trace debug info warn error fatal )) {
@@ -58,6 +57,14 @@ sub _log {
 1;
 
 __END__
+
+=head1 NAME
+
+Log::Contextual::SimpleLogger - Super simple logger made for playing with Log::Contextual
+
+=head1 VERSION
+
+version 0.008002
 
 =head1 SYNOPSIS
 

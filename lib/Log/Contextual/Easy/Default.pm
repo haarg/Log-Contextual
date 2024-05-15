@@ -1,9 +1,8 @@
 package Log::Contextual::Easy::Default;
-
-# ABSTRACT: Import all logging methods with WarnLogger as default
-
 use strict;
 use warnings;
+
+our $VERSION = '0.008002';
 
 use Log::Contextual ();
 BEGIN { our @ISA = qw(Log::Contextual) }
@@ -24,6 +23,14 @@ sub default_import { qw(:dlog :log ) }
 1;
 
 __END__
+
+=head1 NAME
+
+Log::Contextual::Easy::Default - Import all logging methods with WarnLogger as default
+
+=head1 VERSION
+
+version 0.008002
 
 =head1 SYNOPSIS
 
