@@ -13,7 +13,7 @@ with 'Log::Contextual::Role::Router',
   'Log::Contextual::Role::Router::WithLogger',
   'Log::Contextual::Role::Router::HasLogger';
 
-eval {
+eval { ## no critic (ErrorHandling::RequireCheckingReturnValueOfEval)
    require Log::Log4perl;
    die if $Log::Log4perl::VERSION < 1.29;
    Log::Log4perl->wrapper_register(__PACKAGE__)

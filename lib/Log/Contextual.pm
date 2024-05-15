@@ -20,7 +20,7 @@ sub stash_name {
    return $cv->GV->STASH->NAME;
 }
 
-eval {
+eval { ## no critic (ErrorHandling::RequireCheckingReturnValueOfEval)
    require Log::Log4perl;
    die if $Log::Log4perl::VERSION < 1.29;
    Log::Log4perl->wrapper_register(__PACKAGE__)
@@ -166,7 +166,7 @@ sub _maybe_export {
    *$full_target = $sub;
 }
 
-sub _gen_set_logger {
+sub _gen_set_logger { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router) = @_;
    die ref($router) . " does not support set_logger()"
       unless $router->does('Log::Contextual::Role::Router::SetLogger');
@@ -174,7 +174,7 @@ sub _gen_set_logger {
    sub { $router->set_logger(@_) },
 }
 
-sub _gen_with_logger {
+sub _gen_with_logger { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router) = @_;
    die ref($router) . " does not support with_logger()"
       unless $router->does('Log::Contextual::Role::Router::WithLogger');
@@ -182,7 +182,7 @@ sub _gen_with_logger {
    sub { $router->with_logger(@_) },
 }
 
-sub _gen_has_logger {
+sub _gen_has_logger { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router) = @_;
    die ref($router) . " does not support has_logger()"
       unless $router->does('Log::Contextual::Role::Router::HasLogger');
@@ -190,7 +190,7 @@ sub _gen_has_logger {
    sub { $router->has_logger(@_) },
 }
 
-sub _gen_log {
+sub _gen_log { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
 
    sub (&@) {
@@ -207,7 +207,7 @@ sub _gen_log {
    };
 }
 
-sub _gen_slog {
+sub _gen_slog { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub {
       my ($text, @args) = @_;
@@ -223,7 +223,7 @@ sub _gen_slog {
    };
 }
 
-sub _gen_logS {
+sub _gen_logS { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub (&@) {
       my ($code, @args) = @_;
@@ -239,7 +239,7 @@ sub _gen_logS {
    };
 }
 
-sub _gen_slogS {
+sub _gen_slogS { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub {
       my ($text, @args) = @_;
@@ -256,7 +256,7 @@ sub _gen_slogS {
 }
 
 
-sub _gen_Dlog {
+sub _gen_Dlog { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub (&@) {
       my ($code, @args) = @_;
@@ -276,7 +276,7 @@ sub _gen_Dlog {
    };
 }
 
-sub _gen_Dslog {
+sub _gen_Dslog { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub {
       my ($text, @args) = @_;
@@ -295,7 +295,7 @@ sub _gen_Dslog {
    };
 }
 
-sub _gen_DlogS {
+sub _gen_DlogS { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub (&$) {
       my ($code, $ref) = @_;
@@ -315,7 +315,7 @@ sub _gen_DlogS {
    };
 }
 
-sub _gen_DslogS {
+sub _gen_DslogS { ## no critic (Subroutines::ProhibitUnusedPrivateSubroutines)
    my ($class, $router, $level) = @_;
    sub {
       my ($text, $ref) = @_;
