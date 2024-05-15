@@ -11,4 +11,5 @@ on test => sub {
 
 on develop => sub {
   requires 'Test::Pod::Coverage::TrustMe';
+  requires 'Test::Vars';
 };
