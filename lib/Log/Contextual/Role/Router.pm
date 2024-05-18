@@ -20,7 +20,7 @@ Log::Contextual::Role::Router - Abstract interface between loggers and logging c
 
 =head1 VERSION
 
-version 0.008002
+version 0.009001
 
 =head1 SYNOPSIS
 

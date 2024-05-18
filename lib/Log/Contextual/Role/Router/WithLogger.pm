@@ -18,6 +18,6 @@ Log::Contextual::Role::Router::WithLogger - Abstract interface between loggers a
 
 =head1 VERSION
 
-version 0.008002
+version 0.009001
 
 =cut

@@ -160,6 +160,6 @@ Log::Contextual::Router - Route messages to loggers
 
 =head1 VERSION
 
-version 0.008002
+version 0.009001
 
 =cut

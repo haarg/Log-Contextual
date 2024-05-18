@@ -49,7 +49,7 @@ Log::Contextual::TeeLogger - Output to more than one logger
 
 =head1 VERSION
 
-version 0.008002
+version 0.009001
 
 =head1 SYNOPSIS
 

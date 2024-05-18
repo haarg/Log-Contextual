@@ -64,7 +64,7 @@ Log::Contextual::SimpleLogger - Super simple logger made for playing with Log::C
 
 =head1 VERSION
 
-version 0.008002
+version 0.009001
 
 =head1 SYNOPSIS
 
