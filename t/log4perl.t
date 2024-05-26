@@ -7,8 +7,6 @@ use Test::Needs {
   'Log::Log4perl' => 1.29,
 };
 
-plan tests => 2;
-
 use FindBin;
 unlink 'myerrs.log' if -e 'myerrs.log';
 Log::Log4perl->init("$FindBin::Bin/log4perl.conf");
@@ -36,3 +34,5 @@ is $datas[1],
   'file and line work with Log4perl in a sub';
 
 unlink 'myerrs.log';
+
+done_testing;

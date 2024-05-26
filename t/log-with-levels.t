@@ -4,7 +4,7 @@ use warnings;
 use Log::Contextual qw{:dlog :log with_logger set_logger},
   -levels => ['custom'];
 use Log::Contextual::SimpleLogger;
-use Test::More qw(no_plan);
+use Test::More;
 
 my $logger = DumbLogger->new;
 
@@ -65,3 +65,5 @@ BEGIN {
 
   1;
 }
+
+done_testing;

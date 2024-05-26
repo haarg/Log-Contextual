@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Log::Contextual::SimpleLogger;
-use Test::More qw(no_plan);
+use Test::More;
 use Log::Contextual qw(:log set_logger);
 
 my ($var1, $var2, $var3);
@@ -100,3 +100,5 @@ BEGIN {
     log_debug { '2.var3' }
   }
 }
+
+done_testing;

@@ -4,7 +4,7 @@ use warnings;
 use lib 't/lib';
 
 use DefaultImportLogger;
-use Test::More qw(no_plan);
+use Test::More;
 
 my @levels = qw(lol wut zomg);
 
@@ -25,3 +25,4 @@ for (@levels) {
   is($val, 'foo', "logS_$_ passes data through correctly");
 }
 
+done_testing;

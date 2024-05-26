@@ -5,7 +5,7 @@ use Log::Contextual::WarnLogger;    # -levels => [qw(custom1 custom2)];
 use Log::Contextual qw{:log set_logger} => -logger =>
   Log::Contextual::WarnLogger->new({env_prefix => 'FOO'});
 
-use Test::More qw(no_plan);
+use Test::More;
 use Test::Fatal;
 
 {
@@ -121,3 +121,4 @@ my $l = Log::Contextual::WarnLogger->new({
   );
 }
 
+done_testing;

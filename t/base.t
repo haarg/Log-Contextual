@@ -4,7 +4,7 @@ use warnings;
 use lib 't/lib';
 
 use BaseLogger qw{:log with_logger set_logger};
-use Test::More qw(no_plan);
+use Test::More;
 
 my @levels = qw(lol wut zomg);
 
@@ -46,3 +46,4 @@ VANILLA: {
 
 ok(!eval { Log::Contextual->import; 1 }, 'Blank Log::Contextual import dies');
 
+done_testing;

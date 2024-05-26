@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More 'no_plan';
+use Test::More;
 
 #bug report does not include a case where Log::Contextual is
 #brought in via 'use'
@@ -19,3 +19,5 @@ like(
   qr/^ no logger set!  you can't try to log something without a logger!/,
   'Got correct error'
 );
+
+done_testing;

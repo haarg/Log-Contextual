@@ -4,7 +4,7 @@ use warnings;
 use Log::Contextual::WarnLogger;
 use Log::Contextual qw{:log set_logger} => -logger =>
   Log::Contextual::WarnLogger->new({env_prefix => 'FOO'});
-use Test::More qw(no_plan);
+use Test::More;
 my $l = Log::Contextual::WarnLogger->new({env_prefix => 'BAR'});
 
 {
@@ -121,3 +121,5 @@ my $l = Log::Contextual::WarnLogger->new({env_prefix => 'BAR'});
   is($cap, "[fatal] fatal\n", 'fatal renders correctly');
 
 }
+
+done_testing;

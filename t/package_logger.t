@@ -3,7 +3,7 @@ use warnings;
 
 use Log::Contextual qw{:log with_logger set_logger};
 use Log::Contextual::SimpleLogger;
-use Test::More qw(no_plan);
+use Test::More;
 my $var1;
 my $var2;
 my $var3;
@@ -68,3 +68,5 @@ set_logger($var_logger1);
 K::foo;
 is($var1, q(),             '... and set_logger does not win');
 is($var2, "[debug] foo\n", '... and package_logger still gets the value');
+
+done_testing;

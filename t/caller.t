@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Log::Contextual::SimpleLogger;
-use Test::More qw(no_plan);
+use Test::More;
 use Log::Contextual qw(:log set_logger);
 my $var;
 my @caller_info;
@@ -46,3 +46,5 @@ is(
   "[debug] test DlogS_debug at " . __FILE__ . " line " . (__LINE__- 3) . ".\n",
   'fake warn'
 );
+
+done_testing;

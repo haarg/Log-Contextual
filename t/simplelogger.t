@@ -5,7 +5,7 @@ use File::Temp;
 use Log::Contextual::SimpleLogger;
 use Log::Contextual qw{:log set_logger} => -logger =>
   Log::Contextual::SimpleLogger->new({levels => [qw{debug}]});
-use Test::More qw(no_plan);
+use Test::More;
 my $l = Log::Contextual::SimpleLogger->new({levels => [qw{debug}]});
 
 ok(!$l->is_trace, 'is_trace is false on SimpleLogger');
@@ -102,3 +102,4 @@ ok($u->is_warn,   'is_warn is true on SimpleLogger');
 ok($u->is_error,  'is_error is true on SimpleLogger');
 ok($u->is_fatal,  'is_fatal is true on SimpleLogger');
 
+done_testing;

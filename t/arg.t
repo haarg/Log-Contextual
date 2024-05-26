@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 use Log::Contextual::SimpleLogger;
-use Test::More 'no_plan';
+use Test::More;
 my $var_log;
 my $var;
 
@@ -32,3 +32,5 @@ for my $level (@levels) {
     ok($var eq "[$level] $method_name\n", "log argument was correct");
   }
 }
+
+done_testing;

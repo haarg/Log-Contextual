@@ -3,7 +3,7 @@ use warnings;
 
 use Log::Contextual qw{:log with_logger set_logger};
 use Log::Contextual::SimpleLogger;
-use Test::More qw(no_plan);
+use Test::More;
 
 my @levels = qw(debug trace warn info error fatal);
 
@@ -103,3 +103,4 @@ VANILLA: {
 
 ok(!eval { Log::Contextual->import; 1 }, 'Blank Log::Contextual import dies');
 
+done_testing;

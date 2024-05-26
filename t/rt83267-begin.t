@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More qw(no_plan);
+use Test::More;
 
 BEGIN {
   eval {
@@ -20,3 +20,5 @@ BEGIN {
 
   is($@, '', 'non-main package subtest did not die');
 }
+
+done_testing;
