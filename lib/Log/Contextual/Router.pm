@@ -162,4 +162,12 @@ Log::Contextual::Router - Route messages to loggers
 
 version 0.009001
 
+=head1 DESCRIPTION
+
+This is the default log router used by L<Log::Contextual>. It fulfills the roles
+L<Log::Contextual::Role::Router>,
+L<Log::Contextual::Role::Router::WithLogger>,
+L<Log::Contextual::Role::Router::HasLogger>, and
+L<Log::Contextual::Role::Router::SetLogger>.
+
 =cut
