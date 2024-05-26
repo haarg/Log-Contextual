@@ -130,7 +130,7 @@ sub _get_loggers {
   $info{caller_level}++;
   $logger = $logger->($package, \%info);
 
-  return $logger if $logger ->${\"is_${log_level}"};
+  return $logger if $logger->${\"is_${log_level}"};
   return ();
 }
 

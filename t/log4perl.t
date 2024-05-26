@@ -21,7 +21,7 @@ my @elines;
 push @elines, __LINE__; log_error { 'err FIRST' };
 
 sub foo {
-   push @elines, __LINE__; log_error { 'err SECOND' };
+  push @elines, __LINE__; log_error { 'err SECOND' };
 }
 foo();
 

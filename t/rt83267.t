@@ -7,15 +7,15 @@ use Test::More 'no_plan';
 
 #try to import a single log function but do not include any tags
 BEGIN {
-   require Log::Contextual;
-   Log::Contextual->import('log_info');
+  require Log::Contextual;
+  Log::Contextual->import('log_info');
 }
 
 eval {
    log_info { "test" };
 };
 like(
-   $@,
-   qr/^ no logger set!  you can't try to log something without a logger!/,
-   'Got correct error'
+  $@,
+  qr/^ no logger set!  you can't try to log something without a logger!/,
+  'Got correct error'
 );
