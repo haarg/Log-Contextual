@@ -538,6 +538,8 @@ Basically it sets the logger to be used if C<set_logger> is never called; so
 
 =head1 SETTING DEFAULT IMPORT OPTIONS
 
+=for Pod::Coverage arg_default_logger default_import arg_package_logger arg_levels arg_logger
+
 Eventually you will get tired of writing the following in every single one of
 your packages:
 
@@ -875,6 +877,8 @@ six take the results of whatever the user returned from their coderef and log
 them.  For a basic example see L<Log::Contextual::SimpleLogger>.
 
 =head1 LOG ROUTING
+
+=for Pod::Coverage router
 
 In between the loggers and the log functions is a log router that is responsible for
 finding a logger to handle the log event and passing the log information to the
