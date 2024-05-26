@@ -20,4 +20,12 @@ Log::Contextual::Role::Router::HasLogger - Abstract interface between loggers an
 
 version 0.009001
 
+=head1 REQUIRED METHODS
+
+=over
+
+=item has_logger
+
+=back
+
 =cut

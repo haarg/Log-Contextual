@@ -20,4 +20,12 @@ Log::Contextual::Role::Router::WithLogger - Abstract interface between loggers a
 
 version 0.009001
 
+=head1 REQUIRED METHODS
+
+=over
+
+=item with_logger
+
+=back
+
 =cut
