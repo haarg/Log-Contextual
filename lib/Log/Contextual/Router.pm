@@ -116,7 +116,7 @@ sub _set_package_logger_for {
   $_[0]->_package_logger->{$_[1]} = $logger
 }
 
-sub get_loggers {
+sub _get_loggers {
   my ($self, %info) = @_;
   my $package   = $info{caller_package};
   my $log_level = $info{message_level};
@@ -143,7 +143,7 @@ sub handle_log_request {
 
   $message_info{caller_level}++;
 
-  my @loggers = $self->get_loggers(%message_info)
+  my @loggers = $self->_get_loggers(%message_info)
     or return;
 
   my @log = defined $text ? ($text) : ($generator->(@$args));
