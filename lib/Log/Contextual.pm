@@ -8,7 +8,7 @@ use Data::Dumper::Concise;
 
 use B qw(svref_2object);
 
-sub stash_name {
+sub _stash_name {
   my ($coderef) = @_;
   ref $coderef or return;
   my $cv = B::svref_2object($coderef);
@@ -159,7 +159,7 @@ sub _maybe_export {
   no strict 'refs';
   if (defined &$full_target) {
     return
-      if stash_name(\&full_target) eq __PACKAGE__;
+      if _stash_name(\&full_target) eq __PACKAGE__;
 
     # reexport will warn
   }
