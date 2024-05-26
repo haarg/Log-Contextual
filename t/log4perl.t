@@ -3,17 +3,11 @@ use warnings;
 
 use Test::More;
 
-if (
-   eval <<'EOE'
-require Log::Log4perl;
-die if $Log::Log4perl::VERSION < 1.29;
-1
-EOE
-  ) {
-   plan tests => 2;
-} else {
-   plan skip_all => 'Log::Log4perl 1.29 not installed'
-}
+use Test::Needs {
+  'Log::Log4perl' => 1.29,
+};
+
+plan tests => 2;
 
 use FindBin;
 unlink 'myerrs.log' if -e 'myerrs.log';
