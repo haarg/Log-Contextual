@@ -37,20 +37,20 @@ version 0.009001
 
 In your module:
 
- package My::Module;
- use Log::Contextual::Easy::Default;
+  package My::Module;
+  use Log::Contextual::Easy::Default;
 
- log_debug { "your message" };
- Dlog_trace { $_ } @vars;
+  log_debug { "your message" };
+  Dlog_trace { $_ } @vars;
 
 In your program:
 
- use My::Module;
+  use My::Module;
 
- # enable warnings
- $ENV{MY_MODULE_UPTO}="TRACE";
+  # enable warnings
+  $ENV{MY_MODULE_UPTO}="TRACE";
 
- # or use a specific logger with set_logger / with_logger
+  # or use a specific logger with set_logger / with_logger
 
 =head1 DESCRIPTION
 
