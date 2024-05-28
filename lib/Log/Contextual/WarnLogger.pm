@@ -124,7 +124,7 @@ Log::Contextual::WarnLogger - logger for libraries using Log::Contextual
 
 =head1 VERSION
 
-version 0.009001
+version
 
 =head1 SYNOPSIS
 

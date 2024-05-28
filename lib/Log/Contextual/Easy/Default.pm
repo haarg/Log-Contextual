@@ -31,7 +31,7 @@ Log::Contextual::Easy::Default - Import all logging methods with WarnLogger as d
 
 =head1 VERSION
 
-version 0.009001
+version
 
 =head1 SYNOPSIS
 

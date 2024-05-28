@@ -360,7 +360,7 @@ Log::Contextual - Simple logging interface with a contextual log
 
 =head1 VERSION
 
-version 0.009001
+version
 
 =head1 SYNOPSIS
 

@@ -18,7 +18,7 @@ Log::Contextual::Role::Router::SetLogger - Abstract interface between loggers an
 
 =head1 VERSION
 
-version 0.009001
+version
 
 =head1 REQUIRED METHODS
 
