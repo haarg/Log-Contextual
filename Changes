@@ -1,6 +1,6 @@
-Revision history for {{$dist->name}}
+Revision history for Log-Contextual
 
-{{$NEXT}}
+0.009001  2024-05-29
   - fix log4perl test when run with unexpected path or directory seperator
   - add basic docs showing what each role represents
   - rename some internal methods to be prefixed with underscores
