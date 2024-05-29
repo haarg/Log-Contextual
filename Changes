@@ -1,4 +1,6 @@
-Revision history for Log-Contextual
+Revision history for {{$dist->name}}
+
+{{$NEXT}}
 
 0.009001  2024-05-29
   - fix log4perl test when run with unexpected path or directory seperator

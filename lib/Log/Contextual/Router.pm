@@ -2,7 +2,7 @@ package Log::Contextual::Router;
 use strict;
 use warnings;
 
-our $VERSION = '0.009001';
+our $VERSION = '0.009002';
 
 use Scalar::Util 'blessed';
 
